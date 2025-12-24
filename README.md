@@ -42,7 +42,7 @@ Website ini membahas 6 fokus utama informatika:
 ├── index html (Submission ArifAl).html    # File HTML utama
 ├── app.style.css                          # Stylesheet untuk styling
 ├── index.js                               # File JavaScript (optional)
-└── README_Website.md                      # Dokumentasi ini
+└── README.md                      # Dokumentasi ini
 ```
 
 ## 🎨 Teknologi yang Digunakan
@@ -185,3 +185,4 @@ Jika Anda memiliki pertanyaan atau saran, silakan buat issue di repository ini.
 **Happy Coding! 🚀**
 
 *Dibuat dengan ❤️ untuk pembelajaran web development*
+
