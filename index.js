@@ -1,0 +1,1 @@
+windows.alert("Anda sedang tidak aman");
