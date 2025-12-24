@@ -12,13 +12,17 @@ Website ini merupakan platform edukasi yang memperkenalkan konsep informatika ke
 
 ## ✨ Fitur
 
-- **Navigasi Responsif**: Menu navigasi yang mudah digunakan dengan smooth scrolling
+- **Navigasi Responsif**: Menu navigasi sticky dengan smooth scrolling dan shadow effect
 - **Jumbotron Header**: Header yang menarik dengan judul utama
 - **Konten Informatif**: Penjelasan lengkap tentang fokus utama informatika
-- **Profil Penulis**: Sidebar dengan informasi profil penulis
-- **Interaktivitas**: Tombol toggle untuk menampilkan/menyembunyikan informasi tambahan
+- **Profil Penulis**: Sticky sidebar dengan informasi profil penulis
+- **Interaktivitas**: Tombol toggle dengan animasi fade-in untuk menampilkan/menyembunyikan informasi tambahan
 - **Desain Modern**: Menggunakan Google Fonts (Quicksand) dan color scheme yang profesional
 - **Semantic HTML**: Struktur HTML yang mengikuti best practices
+- **Header Boxes**: Box berwarna dengan teks putih untuk judul section yang lebih menonjol
+- **Responsive Design**: Layout otomatis menyesuaikan untuk mobile, tablet, dan desktop
+- **Smooth Animations**: Transisi halus pada hover dan interaksi
+- **Accessibility**: Struktur semantic yang baik untuk screen readers
 
 ## 🎯 Fokus Pembahasan Informatika
 
@@ -52,11 +56,15 @@ Website ini membahas 6 fokus utama informatika:
 
 | Warna | Hex Code | Penggunaan |
 |-------|----------|------------|
-| Blue Grey | `#607D8B` | Header, Footer, Navigation |
+| Blue Grey | `#607D8B` | Header, Footer, Navigation, Section Header Boxes |
 | Light Grey | `#ECEFF1` | Background Body |
-| White | `#FFFFFF` | Article Background |
+| White | `#FFFFFF` | Article Background, Header Text |
+| Light Grey 2 | `#F5F5F5` | Aside Background |
 | Teal | `#009688` | Button Primary |
 | Dark Teal | `#00897B` | Button Hover |
+| Grey Blue | `#CFD8DC` | Additional Info Background |
+| Black | `#000000` | Additional Info Text |
+| Dark Grey | `#333333` | Body Text |
 
 ## 🚀 Cara Menggunakan
 
@@ -87,10 +95,12 @@ http://localhost:8000
 
 ## 📱 Fitur Responsif
 
-Website ini menggunakan flexbox layout yang memungkinkan konten menyesuaikan dengan berbagai ukuran layar:
+Website ini menggunakan flexbox layout dan media queries yang memungkinkan konten menyesuaikan dengan berbagai ukuran layar:
 
-- **Desktop**: Layout 2 kolom (artikel + sidebar)
-- **Tablet & Mobile**: Layout akan menyesuaikan secara otomatis
+- **Desktop (>768px)**: Layout 2 kolom (artikel + sidebar) dengan sticky sidebar
+- **Tablet & Mobile (≤768px)**: Layout 1 kolom vertikal dengan sidebar di bawah konten utama
+- **Sticky Navigation**: Navigasi tetap di atas saat scroll pada semua device
+- **Responsive Typography**: Ukuran font menyesuaikan dengan ukuran layar
 
 ## 🔧 Kustomisasi
 
@@ -120,11 +130,13 @@ Tambahkan section baru di dalam tag `<article>`:
 ```html
 <section id="new-section">
     <header>
-        <h3>Judul Baru</h3>
+        <h2>Judul Baru</h2>
     </header>
     <p>Konten Anda di sini...</p>
 </section>
 ```
+
+**Catatan**: Header section menggunakan `<h2>` untuk konsistensi dan hierarki heading yang baik. Header akan otomatis memiliki background berwarna (#607D8B) dengan teks putih.
 
 ## 📝 Semantic HTML Elements
 
